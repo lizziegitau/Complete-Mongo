@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "e1a42dc0-5604-415b-889b-91c6fc94b28d",
+		"name": "Bookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28383502"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books/64a6b87a5f8ba67795e92d77",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books/64a6b87a5f8ba67795e92d77",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"64a6b87a5f8ba67795e92d77"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"The Final Empire\",\r\n    \"author\": \"Brandon Sanderson\",\r\n    \"rating\": 9,\r\n    \"pages\": 420,\r\n    \"genres\": [\r\n        \"fantasy\",\r\n        \"magic\"\r\n    ],\r\n    \"reviews\": [\r\n        {\r\n            \"name\": \"Shaun\",\r\n            \"body\": \"Couldn't put this book down.\"\r\n        },\r\n        {\r\n            \"name\": \"Chun-Li\",\r\n            \"body\": \"Love it.\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books/64a6bd155f8ba67795e92d7b",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books/64a6bd155f8ba67795e92d7b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"64a6bd155f8ba67795e92d7b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books/64a6ff80f31ea7d4349479e0",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pages\": 350,\r\n    \"rating\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/books/64a6ff80f31ea7d4349479e0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books",
+						"64a6ff80f31ea7d4349479e0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/books?p=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/books?p=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
